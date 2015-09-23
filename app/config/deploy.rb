@@ -17,7 +17,7 @@ set :model_manager, "doctrine"
 role :web,        domain                         # Your HTTP server, Apache/etc
 role :app,        domain, :primary => true       # This may be the same as your `Web` server
 
-set :shared_files, [app_path + "/config/parameter.yml"]
+set :shared_files, [app_path + "/config/parameters.yml"]
 set :shared_children, [app_path + "/logs", "vendor"]
 set :use_composer, true
 #set :update_vendors, true
